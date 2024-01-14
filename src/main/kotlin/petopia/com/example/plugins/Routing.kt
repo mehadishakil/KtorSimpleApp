@@ -8,6 +8,7 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import petopia.com.example.authentication.JwtService
 import petopia.com.example.authentication.hash
+import petopia.com.example.routes.UserRoutes
 
 fun Application.configureRouting() {
 
@@ -17,6 +18,13 @@ fun Application.configureRouting() {
 
 
     routing {
+
+
+
+        UserRoutes(db, jwtService, hashFunction)
+
+
+
         get("/") {
             call.respondText("Hello World!")
         }

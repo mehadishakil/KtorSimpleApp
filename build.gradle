@@ -33,6 +33,9 @@ dependencies {
     implementation "org.postgresql:postgresql:$postgres_version"
     implementation "com.zaxxer:HikariCP:$hikari_version"
 
+    // location dependency
+    implementation("io.ktor:ktor-server-locations:$ktor_version")
+
 }
 
 

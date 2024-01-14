@@ -3,6 +3,7 @@ package petopia.com.example
 import com.example.repository.DatabaseFactory
 import com.example.repository.Repo
 import io.ktor.server.application.*
+import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 import petopia.com.example.authentication.JwtService
@@ -15,7 +16,6 @@ fun main() {
 }
 
 fun Application.module() {
-
     DatabaseFactory.init()
     configureSecurity()
     configureSerialization()
