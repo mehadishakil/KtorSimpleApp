@@ -7,7 +7,7 @@ import com.example.data.model.User
 
 class JwtService {
 
-    private val issuer = "petopia_db"
+    private val issuer = "noteServer"
     private val jwtSecret = System.getenv("JWT_SECRET")
     private val algorithm = Algorithm.HMAC512(jwtSecret)
 
