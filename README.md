@@ -1,1 +1,1 @@
-Learning Ktor
+Basic Ktor app
